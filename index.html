@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <section> 
     <nav> 
-        <img src="./assets/FES.svg" alt="FES Logo">
+        <img src="./assets/FES.svg" class="logo" alt="FES Logo">
         <ul>
             <li><a href="About">About</a></li>
             <li><a href="Discord">Discord</a></li>
@@ -16,59 +17,71 @@
         </ul>
     </nav>   
     <header> 
+        <div class="row">
         <div> 
             <h1>Best Place to Learn Frontend</h1>
-            <p>Go from being an absolute beginner to a professional frontend developer in just a few months.</p>
+            <p class=" subheader">Go from being an absolute beginner to a professional frontend developer in just a few months.</p>
             <button> Start Here</button>
         </div>
         <figure>
             <img src="./assets/Laptop.png" alt="Home page Image"> 
         </figure>
+        </div>
     </header>
 </section> 
 
 <main> 
     <section id="About">
         <h2>About</h2>
-        <div> 
-            <p>I was told that I could write whatever I want here and am blocked for what to say so this is all you get.</p>
-            <p>I was just going to copy and paste the last paragraph to this one, but wanted some variety.</p>
+        <div class="row">
+        <div class="section__description">
+        <div class="section__description--wrapper"> 
+            <p class="section__description--para">I was told that I could write whatever I want here and am blocked for what to say so this is all you get.</p>
+            <p class="section__description--para">I was just going to copy and paste the last paragraph to this one, but wanted some variety.</p>
         </div>
-        <figure> 
-            <img src="./assets/about.jpg" alr="About Image"> 
+        <figure class="about__img--wrapper">
+            <img src="./assets/about.jpg" alt="About Image"> 
         </figure>
+        </div>
+        </div>
     </section>
 
     <section id="Discord">
         <h2>Discord</h2>
-        <figure> 
+        <div class="row">
+        <div class="section__description">
+        <figure class="about__img--wrapper"> 
             <img src="./asset/discord.png" alt="Discord Image">
         </figure>
-        <div>
-            <p>Another paragraph with no prompt, this one is supposed to be about discord</p>
-            <p>Another much the same.</p>
+        <div class="section__description--wrapper">
+            <p class="section__description--para">Another paragraph with no prompt, this one is supposed to be about discord</p>
+            <p class="section__description--para">Another much the same.</p>
         </div>
+        </div>
+    </div>
     </section>
 
     <section id="Contact">
         <h2>Contact</h2>
+        <div class="row">
         <form action="">
             <label for="email">Your Email</label>
-            <input type="text" placeholder="jane@example.com">
+            <input type="email" placeholder="jane@example.com"><br>
             <label for="Message">Message</label>
-            <textarea type="text" placeholder="type your message here."></textarea>
+            <textarea type="text" placeholder="type your message here."></textarea><br>
             <button type="Submit">Submit</button>
         </form>
+        </div>
     </section>
 </main>
 
 <footer>
-    <img src="./assets/FES.svg" alt="image">
-    <ul>
-        <li><a href="About">About</a></li>
-        <li><a href="Discord">Discord</a></li>
-        <li><a href="Contact">Contact</a></li>
-        <li><a href="">courses</a></li>
+    <img class="footer__logo"src="./assets/FES.svg" alt="image">
+    <ul class="footer__links">
+        <li class="footer__link"><a href="About">About</a></li>
+        <li class="footer__link"><a href="Discord">Discord</a></li>
+        <li class="footer__link"><a href="Contact">Contact</a></li>
+        <li class="footer__link"><a href="">courses</a></li>
     </ul>
     <p>&copy; 2023 Frontend Simplified. All rights reserved.</p>
 </footer>
